@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>K-POP Time Travel · 서지훈</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Noto+Serif+KR:wght@900&family=IBM+Plex+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1B1F3B;--red:#E63946;--pink:#FF7AA2;--teal:#1D9A8A;--yel:#FFE66D;--bg:#FFFAF6;--dim:#6B6E80;--line:#EADFD8}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans KR',sans-serif;color:var(--navy);background:var(--bg);line-height:1.6;word-break:keep-all}
+.w{max-width:1000px;margin:0 auto;padding:0 20px}
+.lab{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:3px;color:var(--red)}
+h1{font-size:clamp(38px,7vw,64px);font-weight:900;line-height:1.1;margin:10px 0}
+h2{font-size:clamp(24px,4vw,34px);font-weight:900;line-height:1.25;margin:8px 0 16px}
+section{padding:56px 0;border-top:1px solid var(--line)}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:36px;align-items:center;padding:56px 20px}
+.btn{display:inline-block;margin:18px 8px 0 0;padding:12px 24px;border-radius:999px;font-weight:700;text-decoration:none;background:var(--red);color:#fff}
+.btn.o{background:none;color:var(--navy);border:2px solid var(--navy)}
+.t{display:grid;grid-template-columns:1fr 70px;border-radius:16px;overflow:hidden;color:#fff;box-shadow:0 16px 30px rgba(27,31,59,.2);max-width:380px;aspect-ratio:4/5}
+.tm{padding:22px;background:linear-gradient(180deg,var(--red) 0 34%,var(--pink) 34% 67%,var(--teal) 67%);display:flex;flex-direction:column}
+.ts{background:var(--navy);border-left:2px dashed var(--yel);display:flex;align-items:center;justify-content:center}
+.ts span{writing-mode:vertical-rl;font-family:'IBM Plex Mono',monospace;color:var(--yel);letter-spacing:4px;font-weight:700}
+.tk{font-weight:900;font-size:22px;color:var(--yel)}.tt{font-weight:900;font-size:22px;line-height:1.1}
+.era{font-family:'Noto Serif KR',serif;font-weight:900;font-size:76px;line-height:1;margin:14px 0 4px}
+.mono{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:2px;opacity:.85}
+.mem{font-weight:700;font-size:14px;border-top:1.5px solid rgba(255,255,255,.7);padding-top:8px;margin-top:10px}
+.bx{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:auto}
+.bx div{background:#fff;color:var(--navy);border-radius:8px;text-align:center;font:500 10px 'IBM Plex Mono',monospace;padding:6px 2px}
+.bx b{display:block;font-size:17px}.bx div:nth-child(1) b{color:var(--red)}.bx div:nth-child(2) b{color:#E0457B}.bx div:nth-child(3) b{color:var(--teal)}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.n{border-top:3px solid var(--navy);padding-top:10px}
+.n b{display:block;font-family:'Noto Serif KR',serif;font-size:clamp(30px,5vw,46px);color:var(--red);line-height:1.1}
+.n i{display:block;font-style:normal;font-size:12px;color:var(--dim);margin-top:4px}
+.c{border-radius:14px;padding:20px;color:#fff}.c b{font-size:22px;display:block}.c small{display:block;margin-top:8px;opacity:.9;font-size:13px}
+.so{margin-top:22px;padding:14px 18px;border-left:4px solid var(--teal);background:#fff;font-weight:700}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.steps div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;font-size:14px}.steps b{display:block;color:var(--red)}
+.lad div{display:flex;gap:12px;align-items:center;padding:10px 14px;border-radius:10px;background:#fff;border:1px solid var(--line);margin-bottom:8px}
+.lad .on{background:#FFE1EA;border-color:var(--pink)}.lad em{margin-left:auto;font-style:normal;font-size:13px;font-weight:700;color:var(--dim)}
+footer{background:var(--navy);color:#fff;padding:36px 0;font-size:14px}
+@media(max-width:760px){.hero,.g3,.steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="w hero">
+  <div>
+    <div class="lab">PORTFOLIO · 1인 프로젝트 · 2026</div>
+    <h1>K-POP<br>TIME TRAVEL</h1>
+    <p>좋아했던 그룹의 데뷔 연도로 떠나는 <b>5분 웹 체험</b>. 서울·도쿄·시드니를 모두 돌고, 콘서트 티켓 여권 한 장을 받는다.</p>
+    <a class="btn" href="https://set4240-stack.github.io/time-passport/" target="_blank">체험 열기 (5분)</a><a class="btn o" href="#why">기획 보기</a>
+  </div>
+  <div class="t"><div class="tm"><div class="mono">STARDIAR × ECHO:ERA · ADMIT ONE</div><div class="tk">K-POP</div><div class="tt">TIME TRAVEL TOUR</div>
+    <div class="era">2010s</div><div class="mono">MY FIRST ERA</div><div class="mem">“친구랑 이어폰 한쪽씩 나눠 끼고 처음 들은 노래”</div>
+    <div class="bx"><div>GATE<b>SEL</b></div><div>ROW ♥<b>TYO</b></div><div>SEAT<b>SYD</b></div></div></div>
+    <div class="ts"><span>COSMIC · 26.11.26</span></div></div>
+</div>
+
+<section id="why"><div class="w">
+  <div class="lab">WHY · 왜 하는가</div>
+  <h2>그룹은 멈춰도, 팬은 남아 있다</h2>
+  <div class="g3">
+    <div class="n"><b>4.12년</b>K-POP 그룹 평균 활동 기간<i>김정섭 2026 · 1,182팀</i></div>
+    <div class="n"><b>35%</b>팬 댓글 564개 중 “그때”를 말한 댓글<i>댓글 갈래 집계</i></div>
+    <div class="n"><b>22분</b>빅뱅 20주년 공연 매진. 찾는 마음은 지금 크다<i>MTN 2026-08-23</i></div>
+  </div>
+  <p class="so">목적: 멈춘 그룹의 팬을 링크 하나로 그 시절로 데려가, 그 시절의 나를 다시 만나게 한다.</p>
+</div></section>
+
+<section><div class="w">
+  <div class="lab">ROUTE · 왜 이 세 도시인가</div>
+  <h2>서울 → 도쿄 → 시드니, 세 도시를 모두 돈다</h2>
+  <p style="margin-bottom:18px">K-POP이 국내 → 가까운 아시아 → 먼 영어권으로 퍼져 간 길이다. 웹이라 이동 비용이 없어 셋 다 간다.</p>
+  <div class="g3">
+    <div class="c" style="background:var(--red)"><b>서울 · 출발점</b>내가 입덕한 곳, 그룹의 첫 무대<small>두드리면 객석 응원봉이 켜진다</small></div>
+    <div class="c" style="background:#E0457B"><b>도쿄 · 첫 해외 무대</b>일본은 2025년까지 한국 음반 수출 1위<small>돔에서 떨어지는 은테이프를 잡는다</small></div>
+    <div class="c" style="background:var(--teal)"><b>시드니 · 가장 먼 영어권</b>K-콘텐츠 행사 1주 4만 2,218명 · 공연 수요 10년 새 600%+<small>밀어 올리면 항구 위로 불꽃</small></div>
+  </div>
+  <p class="so">끝에 ‘가장 마음에 남은 도시’에 ♥를 받아 나라별 반응을 잰다. 다음 정거장은 그 숫자로 고른다(첫 후보 마닐라).</p>
+</div></section>
+
+<section><div class="w">
+  <div class="lab">GOAL · 목표는 어디까지 왔나</div>
+  <h2>5단계 중 1단계 달성</h2>
+  <div class="lad">
+    <div><b>1</b> 시제품 — 세 도시 · 티켓 여권<em style="color:var(--teal)">달성</em></div>
+    <div class="on"><b>2</b> 12월 테스터 6명 중 4명이 그리움<em style="color:var(--red)">진행 중</em></div>
+    <div><b>3</b> 주문 클릭 5% · 4주 재방문 10%<em>예정</em></div>
+    <div><b>4</b> 엔터사 파일럿 1건 (가정)<em>예정</em></div>
+    <div><b>5</b> 2028 정식 3건 (가정)<em>예정</em></div>
+  </div>
+</div></section>
+
+<section><div class="w">
+  <div class="lab">MY ROLE · 내가 한 일</div>
+  <h2>조사부터 시제품까지, 혼자 끝까지</h2>
+  <div class="steps">
+    <div><b>조사</b>시장조사서 105쪽 · 사례 550건</div>
+    <div><b>기획</b>목적·목표 · 감정 설계 · 손익(가정)</div>
+    <div><b>3D·디자인</b>무대 3곳 · 티켓 여권</div>
+    <div><b>시제품</b>모바일 웹 · 손끝 연출</div>
+    <div><b>검증</b>사례 원문 확인 · 테스터 6명</div>
+  </div>
+</div></section>
+
+<footer><div class="w">K-POP TIME TRAVEL · STARDIAR × ECHO:ERA · 서지훈 2026<br><span style="opacity:.75">실존 아티스트의 이름·얼굴·음원은 쓰지 않았다. 체험 속 시대·곡·무대는 가상이다.</span></div></footer>
+</body>
+</html>
